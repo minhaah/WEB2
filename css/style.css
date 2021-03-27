@@ -1,0 +1,530 @@
+/*-------------TYPOGRAPHY---------------*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:wght@300;400;500;700&display=swap');
+/*font-family: 'Dancing Script', cursive; 700
+font-family: 'Roboto', sans-serif; 300 400 500 700*/
+
+/*-------------LAYOUT---------------*/
+.banner{
+    width:100%;
+}
+.container, .top, .mainbar{
+    width:1140px;
+    margin:0 auto;
+}
+h1,h2,h3,p,li,a{
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+/*-------------HEADER---------------*/
+.top_bg{
+    background-color:#fef7f6;
+    width:100%;
+    height:30px;
+    position:absolute;
+    z-index:-1;
+}
+.top{
+    z-index:10;
+    display:flex;
+    justify-content: space-between;
+    font-size:11px;
+    line-height:27px;
+    font-weight:300;
+}
+.top .info,.option{
+    display:flex;
+    justify-content: left;
+}
+.top li{
+    padding:0 17px;
+    border-right:1px solid rgba(119,119,119,0.5);
+}
+.top li:last-child{
+    border-right:0;
+}
+.top .info li:first-child{
+    padding-left:0;
+}
+.top .option li:nth-child(3){
+    border-right:0;
+    padding-right:5px;
+}
+.top .option li:last-child{
+    padding:0;
+}
+.top .option a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#000;
+}
+
+/*MainMenu*/
+.mainbar{
+    display:flex;
+    justify-content: space-between;
+    line-height:70px;
+}
+.mainbar a{
+    text-decoration: none;
+    text-transform:uppercase;
+    font-weight:500;
+    font-size:13px;
+    color:black;
+    transition:0.35s;
+}
+.mainbar li a:hover{
+    color:#ff5353;
+}
+.mainbar h1 a{
+    font-weight:700;
+    font-size:34px;
+}
+
+.mainbar .mainmenu, .wishlist{
+    display:flex;
+    justify-content:center;
+}
+.mainmenu li{
+    margin-right:40px;
+}
+.wishlist li{
+    margin-left:30px;
+}
+/*-------------BANNER---------------*/
+.banner{
+    height:750px;
+    position:relative;
+}
+.banner .banner_content{
+    text-align:center;
+    position:absolute;
+    left:60%;
+    top:calc(50% - 141px);
+}
+.banner.illustration_1{
+    background-image:url(../img/banner.jpg);
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size:cover;
+}
+.banner_content{
+    font-weight:500;
+}
+.banner_content h2{
+    font-size:60px;
+    line-height:70px;
+    white-space:nowrap;
+    text-transform:capitalize;
+}
+.banner_content p{
+    font-size:14px;
+    letter-spacing:0.2em;
+    line-height:42px;
+}
+.banner_content button{
+    font-family: 'Roboto', sans-serif;
+    font-size:14px;
+    letter-spacing:0.25em;
+    line-height:16px;
+    font-weight:500;
+    text-transform:uppercase;
+    color:white;
+    background-color:#ff5353;
+    cursor:pointer;
+    width:170px;
+    height:50px;
+    border-radius:2px;
+    border:none;
+    margin-top:50px;
+    transition:0.5s;
+}
+.banner_content button:hover{
+    background-color:#e94747;
+}
+/*-------------MAIN---------------*/
+.container h2{
+    font-size:36px;
+    font-weight:700;
+    text-align:center;
+    margin-top:150px;
+    margin-bottom:90px;
+    text-transform:uppercase;
+}
+.product_list{
+    display:flex;
+    justify-content: space-between;
+}
+.product_list .product{
+    width:350px;
+    height:450px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center top;
+}
+.product_list .image1{
+    background-image:url(../img/product1.jpg);
+}
+.product_list .image2{
+    background-image:url(../img/product2.jpg);
+}
+.product_list .image3{
+    background-image:url(../img/product3.jpg);
+}
+.product{
+    position:relative;
+}
+.product .icons{
+    text-align:center;
+    margin-top:380px;
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    opacity:0;
+    transition:0.5s ease-in-out;
+}
+.product:hover .icons{
+    opacity:1;
+}
+.icons a{
+    border-radius:50%;
+    color:#888888;
+    background-color:white;
+    padding:15px;
+    margin: 0 5px;
+    transition:0.25s;
+}
+.icons a:hover{
+    background-color:#ff5353;
+    color:white;
+}
+.product .product_title{
+    text-align:center;
+    position:absolute;
+    top:105%; 
+    left:calc(50% - 60px);
+
+}
+.product_title h3 a{
+    font-size:14px;
+    line-height:16px;
+    color:#888888;
+}
+.product_title h3 a:hover{
+    color:#ff5353;
+}
+.product_title p{
+    font-size:18px;
+    line-height:16px;
+    font-weight:500;
+}
+.rating i{
+    font-size:10px;
+    color:#ff5353;
+    padding:10px 0;
+}
+.banner span{
+    font-size:100px;
+    font-family: 'Dancing Script', cursive;
+    color:#2a2a2a;
+    text-transform: uppercase;
+}
+.banner h3{
+    font-size:42px;
+    text-transform: uppercase;
+    font-weight:300;
+    margin-top:50px;
+    white-space: nowrap;
+    color:#4a4a4a;
+}
+.banner.illustration_2{
+    background-image:url(../img/banner2.jpg);
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size:cover;
+    margin-top:250px;
+}
+
+.popular{
+    width:262px;
+    height:341px;
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size:cover;
+    position:relative;
+    margin-bottom:230px;
+}
+.product_list .image4{
+    background-image:url(../img/product-2-1.jpg);
+}
+.product_list .image5{
+    background-image:url(../img/product-2-2.jpg);
+}
+.product_list .image6{
+    background-image:url(../img/product-2-3.jpg);
+}
+.product_list .image7{
+    background-image:url(../img/product-2-4.jpg);
+}
+
+.popular .icons{
+    text-align:center;
+    margin-top:280px;
+    position:absolute;
+    top:0; left:0; right:0; bottom:0;
+    opacity:0;
+    transition:0.5s ease-in-out;
+}
+.popular:hover .icons{
+    opacity:1;
+}
+.popular .product_title{
+    text-align:center;
+    position:absolute;
+    top:105%; 
+    left:calc(50% - 60px);
+}
+.feature{
+    display:flex;
+    justify-content: space-between;
+}
+.feature_item{
+    width:263px;
+    height:166px;
+    text-align:center;
+    border:1px solid #ebeef0;
+    padding-bottom:30px;
+}
+.feature i{
+    font-size:40px;
+    color:#ff5353;
+    padding:30px 0;
+}
+.feature_item h3{
+    font-size:15px;
+    font-weight:500;
+    text-transform:uppercase;
+}
+.feature_item p{
+    font-size:14px;
+    font-weight:400;
+    letter-spacing:0.025em;
+    color:#888888;
+    padding:15px 30px;
+}
+.blog{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:330px;
+}
+.blog_list{
+    height:350px;
+    width:359px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative;
+}
+.blog_1{
+    background-image:url(../img/blog1.jpg);
+}
+.blog_title{
+    position:absolute;
+    top:calc(100% + 30px);
+}
+.blog_title p a,span a{
+    color:#888;
+}
+.blog_title a{
+    transition:0.5s;
+}
+.blog_title a:hover{
+    color:#ff5353;
+}
+.blog_title h3{
+    padding:15px 0;
+    border-bottom:1px solid #e1e1e1;
+}
+.blog_title h3 a{
+    color:black;
+    font-size:20px;
+    font-weight:700;
+    line-height:30px;
+}
+.blog_title p a{
+    font-size:13px;
+    line-height:27px;
+}
+.blog_title span a{
+    font-size:14px;
+    line-height:30px;
+    margin-right:30px;
+}
+.blog_title p:before{
+    content:'  ';
+    background-image:url(../img/date_list.png);
+    background-repeat:no-repeat;
+    display:inline-block;
+    height:6px;
+    width:12px;
+    margin-right:10px;
+}
+.blog_list .blog_content{
+    margin:15px 30px 0 0;
+}
+.blog_2{
+    background-image:url(../img/blog2.jpg);
+}
+.blog_3{
+    background-image:url(../img/blog3.jpg);
+}
+
+
+.follow_list {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:150px;
+}
+
+.follow_list li:first-child{
+    background-image:url(../img/follow-1.jpg);
+}
+.follow_list li:nth-child(2){
+    background-image:url(../img/follow-2.jpg);
+}
+.follow_list li:nth-child(3){
+    background-image:url(../img/follow-3.jpg);
+}
+.follow_list li:nth-child(4){
+    background-image:url(../img/follow-4.jpg);
+}
+
+.follow_list li{
+    width:262px;
+    height:250px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative;
+    text-align:center;
+    line-height:250px;
+    overflow: hidden;
+}
+
+.follow_list a{
+    font-size:30px;
+    color:white;
+    position:absolute;
+    display:block;
+    top:250px;left:0; right:0; bottom:-250px;
+    background-color:rgba(255,83,83,0.7);
+    transition:0.5s;
+}
+.follow_list li:hover a{
+   bottom:0;top:0;
+}
+
+/*-------------FOOTER---------------*/
+footer{
+    background-color:#eee7df;
+    height:481px;
+}
+
+.footer_container{
+    width:1140px;
+    margin:0 auto;
+    padding:100px 0 30px;
+    display:flex;
+    justify-content: space-between;
+    border-bottom:2px solid #e1e1e1;
+}
+.footer_container h3{
+    font-size:16px;
+    font-weight:700;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.widget_list{
+    display:flex;
+    justify-content:space-between;
+}
+.widget{
+    margin-right:165px;
+}
+.widget ul{
+    margin-top:40px;
+}
+.widget li a{
+    font-size:14px;
+    color:#888;
+    line-height:30px;
+    white-space: nowrap;
+    transition:0.25s;
+}
+.widget li a:hover{
+    color:#ff5353;
+}
+.app ul{
+    display:flex;
+    margin:30px 0;
+    justify-content: left;
+}
+.app button{
+    background:white;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+    transition:0.5s;
+    margin-right:10px;
+}
+.app button:hover{
+    background:#ff5353;
+    color:white;
+}
+.app:first-of-type{
+    border-bottom:2px solid #e1e1e1;
+}
+.app:first-of-type button{
+    width:130px;
+    height:49px;
+}
+.app:first-of-type ul button{
+    display:flex;
+    justify-content: center;
+}
+.app:first-of-type ul i{
+    font-size:20px;
+    line-height:50px;
+    color:#ff5353;
+}
+.app .button_title{
+    margin:10px 5px;
+}
+.app ul li p{
+    text-transform: uppercase;
+    text-align:left;
+    white-space: nowrap;
+}
+.app ul li p:first-of-type{
+    font-size:10px;
+    color:#888;
+}
+.app ul li p:last-of-type{
+    font-size:13px;
+    font-weight:500;
+}
+.app:last-of-type{
+    margin:30px 0;
+}
+.app:last-of-type button{
+    width:30px;
+    height:30px;
+}
+footer >p{
+    line-height:86px;
+    font-size:14px;
+    color:#888;
+    text-align:center;
+}
+footer >p span a{
+    color:#ff5353;
+}
